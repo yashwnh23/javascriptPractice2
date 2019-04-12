@@ -1,0 +1,91 @@
+Graphics in HTML5 using SVG
+~~~~~~~~~~~~~~~~~~~~~~~~~ 
+-> SVG stands for Scalable Vector Graphics.
+
+-> SVG is XML based development i.e every item having its own tags.
+
+-> This style is called "declarative programming".
+
+-> SVG renders as image in browser.
+--------------------------------------------------------
+Usage
+~~~~~
+<svg 	width="300"  height="300" 
+			style="border:5px solid Blue;" >		
+</svg>
+
+
+1. Drawing lines
+   ~~~~~~~~~~~~~~
+  <line 	x1="0" y1="0" 
+			x2="300" y2="300" 
+			style="stroke:Red;stroke-width:2" />
+-----------------------------------------------------------------------------------------
+
+2. Drawing Rectangle 
+   ~~~~~~~~~~~~~~~~	
+ <rect  x="40" 	y="40"
+			width="200"  height="100" 		
+			style="fill:blue;  stroke-width:10;stroke:Blue;" /> 	
+		
+  Rounded Corners
+		<rect   x="40" 	y="40"
+				rx="10"  ry="10"
+		...... /> 
+ ------------------------------------------------------- 
+ 
+ 
+  3. Drawing Circles
+ ~~~~~~~~~~~~~~~
+ <circle 	cx="200" cy="150" r="50" 
+				stroke="green" 
+				stroke-width="4" 
+				fill="yellow" /> 	
+----------------------------------------------------------
+
+
+
+
+4. Filling Multiple Colors
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+-> We can fill the shapes with multiple colors in SVG tags by using following tags:
+	1. <defs>
+	2. <linearGradient>	
+	3. <stop>
+	
+Usage
+~~~~~
+<defs>
+	<linearGradient 	id="grad1" 
+					x1="0%" y1="0%" 
+					x2="100%" y2="0%">
+		
+	<stop offset="0.2" style="stop-color:Orange;" />
+	<stop offset="0.5" style="stop-color:white;" />
+	<stop offset="0.7" style="stop-color:Green;" />
+    
+    </linearGradient>	
+</defs>
+
+Note:
+1. To fill vertical order :   x2="100%"  y2="0%"
+2. To fill Horizontal order :   x2="0%"  y2="100%"
+3. To fill Diagonal order :  x2="100%" y2="100%"
+
+4. Applying gradient to shapes
+	<rect     fill="url(#grad1)" />
+----------------------------------------------------------
+
+5. Drawing Image  in SVG
+   ~~~~~~~~~~~~~~~~~~~~~	 
+   <image x="205"  y="150"
+			height="75"
+			width="75"
+				xlink:href="chakra.png"  />	
+--------------------------------------------------------------
+6.  Drawing Text in SVG
+~~~~~~~~~~~~~~~~~~~
+ <text x="30" y="202" fill="green" style="stroke: Black; font-family:Calibri;  font-size: 44px;">
+	 Welcome to HTML5
+ </text>  
+----------------------------------------------------------

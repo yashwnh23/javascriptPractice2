@@ -1,0 +1,235 @@
+<html>
+<head>
+<style>
+.row1{
+background-color:green;
+color:white;}
+.row2{
+color:white;
+background-color:red;}
+table{
+border:solid 2px red;
+}
+td{
+border:solid 1px yellow;
+padding:10px;
+}
+tr{
+margin:10px;}
+.tabhead{
+background-color:yellow;}
+.body{
+height:80%;
+width:100%;
+overflow:scroll;
+}
+.foot{
+display:grid;
+grid-template-columns:auto auto auto;
+position:fixed;
+left:0;
+bottom:0;
+height:120px;
+width:100%;
+background-color:black;
+text-align:center;
+}
+.foot_elements{
+text-decoration:none;
+display:grid;
+grid-template-columns:auto;
+text-align:center;
+color:white;
+}
+.log{
+align:center;
+}
+dialog{
+position:relative;}
+</style>
+
+
+</head>
+<body>
+<div class="body">
+<a href="javascript:void(0)"><h1 id="top">Welcome to Social web services</h1></a>
+<a href="#tabhead"><h1>Go to Employees Table</h1></a>
+<a href="#pd"><h1>Go to Products Table</h1></a>
+<button id="show"><h1>Login Table</h1></button>
+<a href="#lst"><h1>Courses</h1></a>
+<br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/>
+<h1 id="tabhead">Employees table</h1>
+<table>
+<tr class="tabhead">
+<td>Employee No</td>
+<td>Employee Name</td>
+<td>Job</td>
+<td>Department No</td>
+<td>Salary</td>
+</tr>
+<tr class="row1">
+<td>123</td>
+<td>Yashwanth</td>
+<td>Manager</td>
+<td>10</td>
+<td>7500</td>
+</tr>
+<tr class="row2">
+<td>124</td>
+<td>Shashank</td>
+<td>Accountant</td>
+<td>10</td>
+<td>8500</td>
+</tr>
+<tr class="row1">
+<td>125</td>
+<td>Laxman</td>
+<td>Team Lead</td>
+<td>10</td>
+<td>6000</td>
+</tr>
+<tr class="row2">
+<td>126</td>
+<td>Shiva</td>
+<td>Developer</td>
+<td>10</td>
+<td>5500</td>
+</tr>
+</table>
+<a href="#top">Go to top</a>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<h1 id="pd">Product Details</h1>
+<table>
+<tr class="tabhead">
+<th>Product Name</th>
+<th>Country</th>
+<th>Price</th>
+<th>Units In Stock</th>
+</tr>
+<tr class="row1">
+<td>Printer</td>
+<td>India</td>
+<td>2500.00</td>
+<td>25</td>
+</tr>
+<tr class="row1">
+<td>Printer</td>
+<td>Germany</td>
+<td>3500.00</td>
+<td>15</td>
+</tr>
+<tr class="row2">
+<td>Printer</td>
+<td>Pakistan</td>
+<td>5500.00</td>
+<td>0</td>
+</tr>
+<tr class="row1">
+<td>Printer</td>
+<td>China</td>
+<td>1500.00</td>
+<td>65</td>
+</tr>
+<tr class="row1">
+<td>Printer</td>
+<td>Japan</td>
+<td>1000.00</td>
+<td>105</td>
+</tr>
+<tr class="row2">
+<td>Printer</td>
+<td>Bangladesh</td>
+<td>7500.00</td>
+<td>0</td>
+</tr>
+</table>
+<a href="#top">Go to top</a>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+
+
+<dialog id="mydialog">
+<h1>Login
+</h1>
+<table class="log">
+<form>
+<tr>
+<td>Username:</td>
+<td><input type="text" name="uname"></td>
+</tr>
+<tr>
+<td>Password:</td>
+<td><input type="password" name="pass"></td>
+</tr>
+<tr ><td colspan="2" align="center">
+<input type="button" value="close" id="hide"/>
+</td></tr>
+</form>
+</table>
+</dialog>
+
+<script>
+(function(){
+var dialog=document.getElementById("mydialog");
+document.getElementById("show").onclick=function(){
+dialog.show();
+};
+document.getElementById("hide").onclick=function(){
+dialog.close();
+};
+})();
+</script>
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<h1 id="lst">Cources</h1>
+<ul type="square">
+<li>Java
+<ol type="i">
+<li>Core Java</li>
+<li>J2EE</li>
+<li>Spring</li>
+<li>Hybernate</li>
+</ol></li>
+<li>Databases
+<ol type="1">
+<li>MySql</li>
+<li>Oracle
+<ul type="circle">
+<li>Oracle 11g</li>
+<li>Oracle 12c</li>
+<li>Oracle 10g</li>
+<li>Oracle 12c</li>
+</ul>
+</li>
+<li>Sql Server</li>
+<li>DB2</li>
+</ol></li>
+
+</ul>
+<a href="#top">Go to top</a>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+</div>
+<div class="foot">
+<a class="foot_elements" href="https://www.google.com">
+GOOGLE
+<center>
+<img src="goo.png" width="80px" height="80px"></center>
+</a>
+<a class="foot_elements" href="https://www.facebook.com">
+FACEBOOK
+<center>
+<img src="fb.png" width="80px" height="80px"></center>
+</a>
+<a class="foot_elements" href="https://www.twitter.com">
+TWITTER
+<center>
+<img src="twi.png" align="middle"width="80px" height="80px">
+</center>
+</a>
+</div>
+</footer>
+</body>
+
+</html>

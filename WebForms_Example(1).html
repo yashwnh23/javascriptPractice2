@@ -1,0 +1,54 @@
+<html>
+<head></head>
+<body>  
+	<h3>WebForms 2.0 in HTML5</h3>
+	<hr/>
+	<form  action="AddUser.jsp"  autocomplete="off"  method="post">		
+		<fieldset>
+			<legend>User Registration Form</legend>			
+			
+		User Name:  
+		<input type="text" name="t1"  required   autofocus /> 
+		<br><br>
+	 Age: <input type="number" min="0"  max="100"  step="5" name="t2"  />
+		<br><br>
+		Gender: 
+		  <input type="radio"  value="Male"  name="r1"  /> Male
+		 <input type="radio"  value="Female"  name="r1"  /> Female
+		<br/><br/>
+		
+		E-mail  :  <input placeholder="enter  your  email " type="email" name="t3" />
+		<br/><br/>		
+		Pincode  :  
+	<input type="text" 
+				title="Please enter six digits pincode"  pattern="\d{6}"  
+				name="t4" />
+		<br><br>			
+		Qualification : 	 			
+		<select name="t5">
+		   <option>B.Tech</option>
+		   <option>B.Sc</option>
+		   <option>BCA</option>
+		   <option>M.Tech</option>
+		   <option>M.Sc</option>
+		   <option>MCA</option>
+		   <option>Others</option>
+		</select>				
+		<br><br>	
+			Join Date:    <input type="date"  name="t6"  />
+		<br></br>
+			<input type="submit"  value="Add User" />		
+			<input  type="submit"   formaction="edituser.jsp"  value="Edit User" />	
+	 
+			<br/><br/>
+			Are you agree terms and conditions? 
+		     <input type="checkbox"  name="ck1"  />	
+			 	</fieldset>
+	</form>
+</body>
+</html> 
+
+
+
+
+

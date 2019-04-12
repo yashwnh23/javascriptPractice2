@@ -1,0 +1,151 @@
+<html>
+<head>
+<script>
+function yash(){
+var z=document.getElementById("sel");
+var k=z.options[z.selectedIndex].value;
+var audio=document.getElementById("audio");
+var mus=document.getElementById("music");
+mus.src=k;
+audio.load();
+<!-- audio.play(); -->
+}
+function aud(c,b){
+var video=document.getElementById("video");
+var mp4=document.getElementById("mp4");
+mp4.src=c;
+video.poster=b;
+video.load();
+<!-- video.play(); -->
+
+alert(c);
+}
+</script>
+<style>
+
+videos{
+display:grid;
+grid-template-columns:auto auto auto;}
+img{
+width:300px;
+height:250px;
+}
+details{
+cursor:pointer;}
+</style>
+</head>
+<body>
+<h1 id="top">Semantic Tags in Html5 Demo Page</h1>
+<h3><a href="#audios">Audio</a></h3>
+<h3><a href="#videos">Video</a></h3>
+<h3><a href="#hg">Horizontal</a></h3>
+<h3><a href="#vg">vertical</a></h3>
+<h3><a href="#iphone">phone</a></h3>
+<hr/>
+<p>This page will demonstrate image of Semantic Tags in Html5 </p>
+<figure style="text-align:center; border:2px solid blue; padding:15px;">
+<img src="fb.png" style="padding:5px"/>
+<p>Figure: Facebook logo</p>
+</figure>
+<mark style=" text-align:right; background-color:aqua;">Note if you want to communicate with your friend use the above app</mark>
+<br/><br/>
+
+
+
+
+<details>
+<summary>Facebook Details</summary>
+<ul>
+<li>Can chat with friends</li>
+<li>can Share your excitment with friends lively</li>
+</ul>
+</details>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+
+
+
+
+<details>
+<summary id="audios">Play Audio</summary>
+<select id="sel" onchange="yash()">
+<option value="04_-_Blockbuster_-_TeluguWap.Net.mp3">Block Buster</option>
+<option value="Guruvaram.mp3">Guruvaram</option>
+</select>
+</details>
+<br/><br/><br/>
+<audio id="audio" controls>
+<source id="music" src="" type="audio/mp3">
+</audio>
+<a href="#top"><h1>Go to Top</h1></a>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+
+
+
+
+
+<h1 id="videos">Video player</h1>
+ <div class="videos">
+ <img onclick="aud('first.mp4','first.png')" src="first.png" type="images/png">
+ <img onclick="aud('second.mp4','second.png')" src="second.png" type="images/png">
+ <img onclick="aud('third.mp4','third.png')" src="third.png" type="images/png">
+ <div>
+<br/><br/>
+<video id="video" width="400" height="300" controls>
+<source id="mp4" src="" type="audio/mp3">
+</video> 
+<a href="#top"><h1>Go to Top</h1></a>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+
+
+
+
+
+
+
+
+
+<svg id="hg" width="300" height="300" style="border:2px solid red" >
+<rect x="10" y="10" height="30" width="270" style="fill:blue; border:2px solid red;"/>
+<rect x="10" y="50" height="30" width="200" style="fill:blue; border:2px solid red;"/>
+<rect x="10" y="90" height="30" width="70" style="fill:blue; border:2px solid red;"/>
+<rect x="10" y="130" height="30" width="170" style="fill:blue; border:2px solid red;"/>
+<rect x="10" y="170" height="30" width="240" style="fill:blue; border:2px solid red;"/>
+<rect x="10" y="210" height="30" width="120" style="fill:blue; border:2px solid red;"/>
+<rect x="10" y="250" height="30" width="150" style="fill:blue; border:2px solid red;"/>
+</svg>
+<a href="#top"><h1>Go to Top</h1></a>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+<svg id="vg" width="350" height="350" style="border:2px solid red" >
+<text x="15" y="175" font-size="15" > x </text>
+<rect  x="25" y="25" width="300" height="300" style="fill:white; stroke:black;"/>
+<rect x="35" y="195" width="30" height="130" style="fill:blue;"/>
+<rect x="75" y="255" width="30" height="70" style="fill:blue;"/>
+<rect x="115" y="95" width="30" height="230" style="fill:blue;"/>
+<rect x="155" y="215" width="30" height="110" style="fill:blue;"/>
+<rect x="195" y="125" width="30" height="200" style="fill:blue;"/>
+<rect x="235" y="295" width="30" height="30" style="fill:blue; "/>
+<rect x="275" y="55" width="30" height="270" style="fill:blue;"/>
+<text x="175" y="335" font-size="15"> y </text>
+</svg>
+<a href="#top"><h1>Go to Top</h1></a>
+
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+ 
+<svg id="iphone" width="300" height="300" style="border:2px solid red" >
+<rect rx="10" ry="10" x="40" y="10" width="220" height="280" style="fill:black; border:2px solid red;"/>
+<rect rx="10" ry="10" x="60" y="40" width="180" height="200" style="fill:white; border:2px solid red;"/>
+<circle cx="150" cy="25" r="8" style="fill:white;"/>
+<circle cx="150" cy="265" r="18" style="fill:white;"/>
+</svg><a href="#top"><h1>Go to Top</h1></a>
+<br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<mark style="background-color:blue;"><span>hiii how are you</span></mark>
+</body>
+
+
+
+</html>

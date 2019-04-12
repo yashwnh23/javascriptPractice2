@@ -1,0 +1,188 @@
+<html>
+<head>
+<script>
+function val(){
+var name=document.getElementById("name").value;
+var email=document.getElementById("email").value;
+var pass=document.getElementById("pass").value;
+var gender=document.getElementById("gender").value;
+var month=document.getElementById("month").value;
+var date=document.getElementById("day").value;
+var year=document.getElementById("year").value;
+var p=document.getElementById("p");
+if(gender==0 || pass==null || month==0 || date==0 || year==0 || email==null || name==null){
+p.style.display="block";
+alert("yashwanth");
+}
+else{
+p.style.display= "none";
+}
+}
+</script>
+<style>
+text-option:first{
+color#999;
+}
+.a{
+font-size:18px;
+text-align:right;}
+table{
+<!-- transform:rotate(5deg); -->
+padding-left:50px;
+border-spacing:10px;
+<!-- border:2px solid green; -->
+border-radius:5px;
+width:60%;
+}
+h2,h1{margin:2px}
+body{background-color:lightblue;}
+#p{
+width:80%;
+border:1px solid gold;
+text-align:center;
+padding:10px;
+background-color:lightyellow;
+display:none;
+}
+span{
+color:blue;}
+.but{
+background-color:green;
+ color:white;
+ box-shadow:1px 1px green;
+font-size:16px;}
+</style>
+</head>
+<body>
+<div style="margin-left:150px;">
+<h1>Sign Up</h1>
+<h2>It's free and anyone can join</h2>
+<br/>
+<br/><table>
+<form>
+<tr><td class="a">
+<p>Full Name:</p>
+</td>
+<td>
+<input type="text" name="name" id="name"/>
+</td></tr>
+<tr><td class="a">
+<p>Your email:</p>
+</td>
+<td class="b">
+<input type="email" name="email" id="email" autofocus/>
+</td></tr>
+<tr><td class="a">
+<p>New Password:</p>
+</td>
+<td class="b">
+<input type="password" name="pass" id="pass"/>
+</td></tr>
+<tr><td class="a">
+<p>I am:</p>
+</td>
+<td class="b">
+<select name="gender" id="gender">
+<option value="0" disabled selected hidden>Select Sex</option>
+<option value="m">Male</option>
+<option value="f">Female</option>
+<select>
+</td></tr>
+<tr><td class="a">
+<p>BirthDay:</p>
+</td>
+<td class="b">
+<select name="month" id="month">
+<option value="0" disabled selected hidden>Month</option>
+<option value="1">January</option>
+<option value="2">February</option>
+<option value="3">March</option>
+<option value="4">April</option>
+<option value="5">May</option>
+<option value="6">June</option>
+<option value="7">July</option>
+<option value="8">August</option>
+<option value="9">September</option>
+<option value="10">October</option>
+<option value="11">November</option>
+<option value="12">December</option>
+<select>
+<select name="day" id="day">
+<option value="0" disabled selected hidden>Day</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+<option value="1">13</option>
+<option value="2">14</option>
+<option value="3">15</option>
+<option value="4">16</option>
+<option value="5">17</option>
+<option value="6">18</option>
+<option value="7">19</option>
+<option value="8">20</option>
+<option value="9">21</option>
+<option value="10">22</option>
+<option value="11">23</option>
+<option value="12">24</option>
+<option value="8">25</option>
+<option value="9">26</option>
+<option value="10">27</option>
+<option value="11">28</option>
+<option value="12">29</option>
+<option value="11">30</option>
+<option value="12">31</option>
+</select>
+<select name="year" id="year" onchange="val()">
+<option value="0" disabled selected hidden>Year</option>
+<option value="1">1990</option>
+<option value="2">1991</option>
+<option value="3">1992</option>
+<option value="4">1993</option>
+<option value="5">1994</option>
+<option value="6">1995</option>
+<option value="7">1996</option>
+<option value="8">1997</option>
+<option value="8">1998</option>
+<option value="9">1999</option>
+<option value="10">2000</option>
+<option value="11">2001</option>
+<option value="12">2002</option>
+<option value="1">2003</option>
+<option value="2">2004</option>
+<option value="3">2005</option>
+<option value="4">2006</option>
+<option value="5">2007</option>
+<option value="6">2008</option>
+<option value="7">2009</option>
+<option value="8">2010</option>
+<option value="9">2011</option>
+<option value="10">2012</option>
+</select>
+</td></tr>
+<tr><td>
+</td>
+<td class="b">
+<span>Why do I need to provide this.</span>
+</td></tr>
+<tr><td>
+</td>
+<td class="b">
+<input type="button" onclick="val()" name="sign" value="Sign Up" class="but"/>
+</td></tr>
+</table>
+</form>
+<br/>
+<p id="p">You Must Fill in all of the fields</p>
+</div>
+
+</body> 
+</html>

@@ -1,0 +1,55 @@
+<html>
+<head>
+<style>
+img{
+width:300px;
+height:250px;
+}
+videos{
+display:grid;
+grid-template-columns:auto auto auto;}
+</style>
+<script>
+function yash(){
+var z=document.getElementById("sel");
+var k=z.options[z.selectedIndex].value;
+var audio=document.getElementById("audio");
+var mus=document.getElementById("music");
+mus.src=k;
+audio.load();
+audio.play();
+}
+function aud(c){
+var video=document.getElementById("video");
+var mp4=document.getElementById("mp4");
+mp4.src=c;
+video.load();
+video.play();
+
+alert(c);
+}
+</script>
+</head>
+<body>
+
+<select id="sel" onchange="yash()">
+<option value="04_-_Blockbuster_-_TeluguWap.Net.mp3">Block Buster</option>
+<option value="Guruvaram.mp3">Guruvaram</option>
+</select>
+<audio id="audio" controls>
+<source id="music" src="" type="audio/mp3">
+ </audio>
+ <div class="videos">
+ <img onclick="aud('first.mp4')" src="first.png" type="images/png">
+ <img onclick="aud('second.mp4')" src="second.png" type="images/png">
+ <img onclick="aud('third.mp4')" src="third.png" type="images/png">
+ <div>
+<br/><br/>
+<video id="video" controls>
+<source id="mp4" src="" type="audio/mp3">
+</video> 
+</body>
+
+
+
+</html>
